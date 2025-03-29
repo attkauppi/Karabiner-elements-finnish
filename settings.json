@@ -1,0 +1,173 @@
+Karabiner-Elements complex_modifications rules
+
+GitHub
+revision: faf7ee6 / 2025-03-26
+​
+Search...
+
+Table of Contents
+OS Functionality
+56
+Application Specific
+75
+Modifier Keys
+77
+Emulation Modes
+72
+Alternative Keyboard Layouts
+27
+International (Language Specific)
+51
+Key Specific
+98
+Device Specific
+32
+Personal Settings
+46
+Miscellaneous
+13
+Command arrows and home end
+4
+Keychron K2
+2
+Keychron K6
+5
+Keychron K8
+3
+Keychron K14
+1
+KKmoon
+1
+Trackball Tools
+1
+Others
+200
+Examples: Conditions
+4
+Examples: Others
+1
+OS Functionality
+Application Specific
+Modifier Keys
+Emulation Modes
+Alternative Keyboard Layouts
+International (Language Specific)
+Finnish {} keys
+Finnish | key
+Finnish \ key
+Key Specific
+Device Specific
+Personal Settings
+Miscellaneous
+Command arrows and home end
+Keychron K2
+Keychron K6
+Keychron K8
+Keychron K14
+KKmoon
+Trackball Tools
+Others
+Examples: Conditions
+Examples: Others
+Finnish mapping for programming (|, {} and \)
+{
+  "title": "Finnish mapping for programming (|, {} and \\)",
+  "rules": [
+    {
+      "description": "Finnish {} keys",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "7",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8",
+              "modifiers": [
+                "right_option",
+                "left_shift"
+              ],
+              "lazy": true
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "0",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "right_option",
+                "left_shift"
+              ],
+              "lazy": true
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Finnish | key",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "grave_accent_and_tilde",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Finnish \\ key",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "hyphen",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "right_shift",
+                "right_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
